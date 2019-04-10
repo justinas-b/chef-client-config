@@ -14,8 +14,8 @@ node.default['chef_client']['cron']['weekday'] = '*'
 node.default['chef_client']['task']['frequency'] = 'minute'
 node.default['chef_client']['task']['frequency_modifier'] = '10'
 
-if os.windows?
-    include_recipe 'chef-client::task'
+if node['os'].include?('windows')
+  include_recipe 'chef-client::task'
 elsif
-    include_recipe 'chef-client::cron'    
+  include_recipe 'chef-client::cron'    
 end

@@ -8,7 +8,7 @@ issues_url          'https://github.com/justinas-b/chef-client-config/issues'
 source_url          'https://github.com/justinas-b/chef-client-config'
 
 license             'All Rights Reserved'
-version             '0.1.0'
+version             '0.1.1'
 
 chef_version        '>= 13.0'
 depends             'chef-client'
